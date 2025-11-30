@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PROTOCOL OMEGA // BTC_ENCRYPT_STREAM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+
+    <div class="ui-container">
+        
+        <header class="cyber-hud">
+            <div class="hud-block">
+                <div class="label">TARGET_ASSET</div>
+                <div class="value glitch-text">BTC-USDT</div>
+            </div>
+            <div class="hud-block center-focus">
+                <div class="label">CURRENT_VALUATION</div>
+                <div class="mega-value" id="main-price">INIT_STREAM...</div>
+            </div>
+            <div class="hud-block">
+                <div class="label">24H_DELTA</div>
+                <div class="value" id="price-change">--.--%</div>
+            </div>
+        </header>
+
+        <div class="grid-wrapper">
+            <canvas id="grid-canvas"></canvas>
+            
+            <div class="grid-overlay-widget top-left">
+                <div class="widget-row">VOL: <span id="vol-val" class="encrypt-num">00000</span></div>
+                <div class="widget-row">HIGH: <span id="high-val" class="encrypt-num">00000</span></div>
+                <div class="widget-row">LOW: <span id="low-val" class="encrypt-num">00000</span></div>
+            </div>
+            
+            <div class="grid-overlay-widget bottom-right">
+                <div class="widget-row">HASH: <span class="hex-stream">AF34-99BB</span></div>
+                <div class="widget-row">MEMPOOL: <span class="hex-stream">FULL</span></div>
+            </div>
+        </div>
+
+        <div class="footer-terminal">
+            <div class="terminal-line">> CONNECTION_ESTABLISHED: BINANCE_WSS_FEED</div>
+            <div class="terminal-line">> ENCRYPTION_LAYER: ROTATING_360_HUE</div>
+            <div class="terminal-line" id="console-log">> AWAITING_BLOCK_CONFIRMATION...</div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
